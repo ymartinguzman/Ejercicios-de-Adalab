@@ -1,3 +1,26 @@
-body {
-  background-color: red;
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+/*main*/
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: red;
+  font-family: "Montserrat";
+}
+.title {
+  font-weight: bold;
+}
+.title-inner {
+  display: block; /*así consigo que se ponga uno debajo del otro en bloque*/
+}
+/*footer*/
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: green;
 }
