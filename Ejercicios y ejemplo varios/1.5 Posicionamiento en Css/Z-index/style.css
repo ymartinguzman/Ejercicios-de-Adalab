@@ -1,0 +1,18 @@
+.capa1 {
+  width: 300px;
+  height: 150px;
+  background: red;
+  position: relative;
+  top: 50px; /* al estar la capa1 primero. queda por debajo*/
+  z-index: 998;
+  /*orden natural, de arriba a abajo*/
+}
+/*con z-index, altero la posición natural*/
+.capa2 {
+  width: 300px;
+  height: 150px;
+  background: blue;
+  position: relative;
+  opacity: 0.3;
+  z-index: 999;
+}

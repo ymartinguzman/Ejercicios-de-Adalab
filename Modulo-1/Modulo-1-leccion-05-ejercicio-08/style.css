@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.documento {
+  display: inline-block;
+}
+.pdf {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  right: 0;
+}
+.linea {
+  border-bottom: 0.5px solid grey;
+  padding-bottom: 10px;
+}
