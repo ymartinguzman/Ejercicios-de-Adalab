@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Formulario sign up</title>
+  </head>
+  <body>
+    <header>
+      <h1>Create an account</h1>
+      <h2>It´s free and always will be.</h2>
+    </header>
+    <main>
+      <form action="/signup" method="post">
+        <label for="firstName"></label>
+        <input
+          type="text"
+          placeholder="Nuria"
+          id="firstName"
+          name="firstName"
+        />
+        <label for="surname"></label>
+        <input type="text" placeholder="Díaz" id="surname" name="surname" />
+        <div>
+          <label class="email" for="email"></label>
+          <input
+            class="boxes"
+            type="email"
+            placeholder="email"
+            id="email"
+            name="email"
+          />
+        </div>
+        <div>
+          <label for="email"></label>
+          <input
+            class="boxes"
+            type="email"
+            placeholder="Re-enter email"
+            id="email"
+            name="email"
+          />
+        </div>
+        <div>
+          <label for="password"></label>
+          <input
+            class="boxes"
+            type="password"
+            placeholder="New password"
+            id="password"
+            name="password"
+          />
+        </div>
+        <h2>Birthday</h2>
+        <label for="dia"></label>
+        <select name="dia">
+          <option value="" disabled selected>Día</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <select name="mes">
+          <option value="" disabled selected>Mes</option>
+          <option value="Enero">Enero</option>
+          <option value="Febrero">Febrero</option>
+          <option value="Marzo">Marzo</option>
+        </select>
+        <select name="año">
+          <option value="" disabled selected>Año</option>
+          <option value="1980">1980</option>
+          <option value="1981">1981</option>
+          <option value="1982">1982</option>
+        </select>
+        <select name="Why" Why do I need to provide my date of birth?></select>
+      </form>
+    </main>
+  </body>
+</html>
