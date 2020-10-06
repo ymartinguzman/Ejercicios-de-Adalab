@@ -1,2 +1,4 @@
 const superWave = document.querySelector(".super-wave");
-console.log("super-wave:", ".wave");
+superWave.classList.add("wave");
+
+console.log(superWave);
