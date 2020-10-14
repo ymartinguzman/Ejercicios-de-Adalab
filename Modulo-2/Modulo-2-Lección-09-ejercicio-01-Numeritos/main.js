@@ -1,15 +1,17 @@
 "use strict";
 
-function get100Numbers() {
-  let arr = 0;
-  // arr.push(100);
-  // let newArr = arr + 1;
-  for (let i = 0; i < 100; i++) {
-    arr = arr + 1;
-    console.log(arr);
-    console.log(arr.push);
+let arr = [];
 
-    // const newArr = arr + arr.push();
+// for (let i = 1; i <= 100; i++) {
+//   console.log(i);
+//   arr.push(i);
+// }
+// console.log(arr);
+function get100Numbers(newArr) {
+  for (let i = 1; i <= 100; i++) {
+    console.log(i);
+    newArr.push(i);
   }
 }
-get100Numbers();
+get100Numbers(arr);
+console.log(arr);
