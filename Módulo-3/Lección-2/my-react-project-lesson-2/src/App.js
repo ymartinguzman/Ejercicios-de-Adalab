@@ -1,18 +1,24 @@
 import photo from './image.jpg';
 import './App.scss';
+// eslint-disable-next-line
+import React from 'react';
 
-function render() {
-  const titleName = 'Yamira Martín';
-  const date = 'Domingo, 1 de noviembre de 2020';
-  const resultHtml = (
-    <div className="Mediacard">
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    const header = (
       <header className="Card-header">
         <img src={photo} className="Card-image" alt="coming soon" />
         <div>
-          <h1>{titleName}</h1>
-          <p>{date}</p>
+          <h1>Yamira Martín</h1>
+          <p>Domingo, 1 de noviembre de 2020</p>
         </div>
       </header>
+    );
+    const main = (
       <main>
         <p className="LoreIpsum">
           Lorem fistrum ese pedazo de caballo blanco caballo negroorl amatomaa
@@ -26,9 +32,16 @@ function render() {
         </p>
         <p className="Heart">37 ❤️</p>
       </main>
-    </div>
-  );
-  return resultHtml;
+    );
+
+    const resultHtml = (
+      <div className="Mediacard">
+        {header}
+        {main}
+      </div>
+    );
+    return resultHtml;
+  }
 }
 
-export default render;
+export default App;
