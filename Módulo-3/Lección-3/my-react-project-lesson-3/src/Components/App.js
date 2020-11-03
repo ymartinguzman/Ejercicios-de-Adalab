@@ -1,6 +1,6 @@
 //importar componentes
 import React from 'react';
-import RandomCat from './RandomCat';
+
 // eslint-disable-next-line
 import MediaCard from './MediaCard';
 import photo from '../image.jpg';
@@ -25,7 +25,6 @@ class App extends React.Component {
           likes="37"
           heart="❤️"
         />
-        <RandomCat />
       </div>
     );
   }
