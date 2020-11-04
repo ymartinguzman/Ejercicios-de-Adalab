@@ -2,8 +2,10 @@
 import React from 'react';
 
 // eslint-disable-next-line
+import PersonalCard from './PersonalCard';
 import MediaCard from './MediaCard';
 import photo from '../image.jpg';
+import MediaList from './MediaList';
 
 //clase ppal donde van a ir todos los componentes
 class App extends React.Component {
@@ -11,20 +13,16 @@ class App extends React.Component {
     return (
       <div className="App">
         <MediaCard
+          photo={photo}
+          width="100"
+          height="100"
           name="Yamira Martín"
-          date="Domingo, 1 de noviembre de 2020"
-          img={photo}
-          text="Lorem fistrum ese pedazo de caballo blanco caballo negroorl amatomaa
-            jarl diodeno diodeno. Por la gloria de mi madre tiene musho peligro
-            diodeno pupita. No puedor me cago en tus muelas diodeno no te digo
-            trigo por no llamarte Rodrigor no te digo trigo por no llamarte
-            Rodrigor ese hombree a gramenawer a wan ese hombree. Está la cosa
-            muy malar hasta luego Lucas condemor por la gloria de mi madre. Al
-            ataquerl mamaar me cago en tus muelas pecador tiene musho peligro
-            ese que llega la caidita."
-          likes="37"
-          heart="❤️"
+          date="4 de noviembre de 2020"
+          text="Bienvenido al Chiquito Ipsum, el generador de texto de relleno para tus diseños de antes de los dolores.Dale a Fistrum para que te salga ese pedaso de texto Chiquito en estado puro. Si te crees muy moderno dale a Latin que te lo pongo con cuarto y mitad de romanooo...Jarl!!"
+          num={37}
+          heart="❤"
         />
+        <MediaList />
       </div>
     );
   }

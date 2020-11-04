@@ -1,20 +1,36 @@
 import React from 'react';
 import MediaCard from './MediaCard';
+import PersonalCard from './PersonalCard';
 
 class MediaList extends React.Component {
   render() {
     return (
       <section className="section-card">
-        <h1>Personaliza Cards</h1>
+        <h1>Personalize Cards</h1>
         <ul className="section-cards_list">
           <li>
-            <MediaCard name="Itziar" city="Ibiza" country="España" />
+            <PersonalCard
+              name="Itziar"
+              city="Ibiza"
+              country="España"
+              date="03.11.2020"
+            />
           </li>
           <li>
-            <MediaCard name="Yamira" city="Alicante" country="España" />
+            <PersonalCard
+              name="Blume"
+              city="Alicante"
+              country="España"
+              date="03.11.2020"
+            />
           </li>
           <li>
-            <MediaCard name="Mari" city="Campo de Criptana" country="España" />
+            <PersonalCard
+              name="Mari"
+              city="Campo de Criptana"
+              country="España"
+              date="03.11.2020"
+            />
           </li>
         </ul>
       </section>
@@ -22,4 +38,4 @@ class MediaList extends React.Component {
   }
 }
 
-export default CatList;
+export default MediaList;
