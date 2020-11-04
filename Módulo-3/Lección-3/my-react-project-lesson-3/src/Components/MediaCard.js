@@ -1,6 +1,6 @@
 //importar la carpeta
 import React from 'react';
-import '../App.scss';
+import '../stylesheets/App.scss';
 
 //Pintar una tarjeta social para un usuario
 
@@ -9,20 +9,27 @@ class MediaCard extends React.Component {
     return (
       <div className="Container-personal">
         <header className="Card-header">
-          <div>
+          <div className="Card-title">
             <img
+              className="Card-image"
               src={this.props.photo}
               width={this.props.width}
               height={this.props.height}
             ></img>
-            <h2>{this.props.name}</h2>
-            <p>{this.props.date}</p>
+
+            <div className="Card-name">
+              <h2>{this.props.name}</h2>
+              <p>{this.props.date}</p>
+            </div>
           </div>
         </header>
         <main>
           <p>{this.props.text}</p>
-          <p>{this.props.heart}</p>
         </main>
+        <footer className="Card-footer">
+          <p>{this.props.num}</p>
+          <p>{this.props.heart}</p>
+        </footer>
       </div>
     );
   }

@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+// .Container {
+//   width: 400px;
+//   height: 700;
+// }
+// .Card-header {
+//   // display: flex;
+// }
+// .Card-image {
+//   width: 100px;
+//   height: 100px;
+// }
+// .Mediacard {
+//   padding: 15px;
+// }
+// .Heart {
+//   text-align: right;
+// }
+
+.Container-personal {
+  width: 300px;
+  height: 400px;
+  margin-left: 40%;
+}
+.Card-title {
+  display: flex;
+  margin-top: 20px;
+}
+.Card-name {
+  margin-top: 25px;
+}
+.Card-footer {
+  display: flex;
+  justify-content: flex-end;
+}
