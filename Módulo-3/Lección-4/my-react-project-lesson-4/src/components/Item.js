@@ -1,5 +1,6 @@
 import React from 'react';
 import '../stylesheet/App.scss';
+import PropTypes from 'prop-types';
 
 class Item extends React.Component {
   render() {
@@ -17,4 +18,12 @@ class Item extends React.Component {
   }
 }
 
+Item.defaultProps = {
+  description: 'No hay descripción del producto',
+};
+
+Item.propTypes = {
+  quantity: PropTypes.number.isRequired,
+  name: PropTypes.string,
+};
 export default Item;

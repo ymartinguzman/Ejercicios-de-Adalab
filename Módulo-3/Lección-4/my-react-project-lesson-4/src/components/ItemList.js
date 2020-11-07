@@ -4,8 +4,8 @@ import Item from './Item';
 const arrayOfItems = [
   {
     name: 'Cereales con chocolate',
-    description: 'Cereales rellenos de chocolate',
-    quantity: 2,
+    // description: 'Cereales rellenos de chocolate',
+    // quantity: '2',
     category: 'Cereales',
     price: 5,
   },
