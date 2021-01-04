@@ -20,6 +20,7 @@ class Item extends React.Component {
 
 Item.defaultProps = {
   description: 'No hay descripción del producto',
+  
 };
 
 Item.propTypes = {
