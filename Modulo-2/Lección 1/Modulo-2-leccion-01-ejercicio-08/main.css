@@ -20,3 +20,12 @@ body {
 .change-color {
   background-color: chartreuse;
 }
+.btn1,
+.btn2 {
+  color: coral;
+  padding: 20px;
+  border-radius: 5px;
+}
+.change-btn {
+  opacity: 0.5;
+}
