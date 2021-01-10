@@ -1,17 +1,19 @@
 'use strict';
 
-const DEFAULT_AVATAR = 'http://placehold.it/300x300';
-let userAvatar = 'http://www.fillmurray.com/300/300';
-//let userAvatar = '';
-
-const imageAvatar = document.querySelector('.user__avatar');
-//imageAvatar.src = userAvatar; //para mostrar la imagen
-//imageAvatar.src = userAvatar || DEFAULT_AVATAR;
-
-console.log(imageAvatar);
-
-if (userAvatar !== '') {
-  imageAvatar.src = userAvatar;
-} else {
-  imageAvatar.src = DEFAULT_AVATAR;
+//function
+function age(a, b) {
+  return a * b;
 }
+console.log(age(3, 4));
+
+//anonymous function
+const newAge = function (c, d) {
+  return c * d;
+};
+console.log(newAge(5, 6));
+
+//arrow function
+const numbers = (e, f) => {
+  return e + f;
+};
+console.log(numbers(4, 10));
