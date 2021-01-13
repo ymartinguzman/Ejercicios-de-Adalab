@@ -1,12 +1,10 @@
 'use strict';
-//PART 1
-//function contains document.querySelector
+
 function getEl(a) {
   const html = document.querySelector(a);
   return html;
 }
 
-//function to know if a number is even or odd
 function numbers(a) {
   if (!a % 2) {
     return true;
@@ -20,14 +18,9 @@ function numbers(a) {
 //   }
 // }
 
-//PART 2
 const sentence = getEl('.paragraph');
-//transform string into number
 const number = parseInt(sentence.innerHTML);
 
-//PART 3
-//check if number is even or odd
-console.log(numbers(!number));
 if (!number) {
   console.log('Este número es PAR');
 } else {
