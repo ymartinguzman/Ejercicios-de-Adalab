@@ -1,42 +1,42 @@
 'use strict';
-//PART 1
+
 //function contains document.querySelector
 function getEl(a) {
   const html = document.querySelector(a);
+  if (!html) {
+    console.log(`No existe ningún elemento con clase, id o tag llamado ${a}`);
+  }
   return html;
 }
 
 //function to know if a number is even or odd
 function numbers(a) {
-  if (!a % 2) {
+  if (a % 2 === 0) {
     return true;
+  } else {
+    return false;
   }
 }
-// function numbers(a) {
-//   if (a % 2 === 0) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// }
 
-//PART 2
+//select number from paragraph
 const sentence = getEl('.paragraph');
+console.log(sentence.innerHTML);
+
 //transform string into number
 const number = parseInt(sentence.innerHTML);
+console.log(number);
 
-//PART 3
 //check if number is even or odd
-console.log(numbers(!number));
-if (!number) {
+console.log(numbers(number));
+if (number === numbers) {
   console.log('Este número es PAR');
 } else {
   console.log('Este número es IMPAR');
 }
 
-//instead to show in console, show on screen
+//instead to show in console, show on window
 const result = getEl('.result');
-if (!number) {
+if (number === numbers) {
   result.innerHTML = 'Este número es PAR';
 } else {
   result.innerHTML = 'Este número es IMPAR';
