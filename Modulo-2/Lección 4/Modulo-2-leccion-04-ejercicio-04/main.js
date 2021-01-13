@@ -1,13 +1,11 @@
 'use strict';
 
-const result = document.querySelector('.paragraph');
-
-function price(a) {
-  const iva = a * 0.21;
-  const withoutIva = a - iva;
-  const total = withoutIva + iva;
-
-  result.innerHTML = `El precio sin IVA: ${withoutIva}, IVA: ${iva} y Total: ${total}`;
-  console.log(iva);
+function numbers(a) {
+  if (a % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
-price(25);
+
+console.log(numbers(2));
