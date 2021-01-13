@@ -1,8 +1,11 @@
 'use strict';
-const html = document.querySelector('.paragraph');
 
-const btnEl = (html) => {
-  return html.innerHTML;
-};
+function getEl(a) {
+  return document.querySelector(a);
+}
 
-console.log(html);
+const title = getEl('.title');
+const btn = getEl('.btn');
+
+title.innerHTML = 'Adiós';
+btn.innerHTML = 'update';
