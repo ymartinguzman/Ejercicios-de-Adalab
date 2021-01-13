@@ -33,3 +33,11 @@ if (number === numbers) {
 } else {
   console.log('Este número es IMPAR');
 }
+
+//instead to show in console, show on window
+const result = getEl('.result');
+if (number === numbers) {
+  result.innerHTML = 'Este número es PAR';
+} else {
+  result.innerHTML = 'Este número es IMPAR';
+}
