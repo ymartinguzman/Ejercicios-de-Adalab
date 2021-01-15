@@ -26,3 +26,5 @@ const newPrice = (a) => {
 //newPrice(25);
 
 console.log(newPrice(25));
+
+
