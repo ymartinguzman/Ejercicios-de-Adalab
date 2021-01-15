@@ -1,28 +1,21 @@
 'use strict';
 
-//TRANSFORM INTO ARROW FUNCTIONS
+const html = document.querySelector('.paragraph');
+const borderBox = false;
+const width = 30;
+const padding = 20;
+const borderSize = 5;
 
-//Exercise 03
-const result = document.querySelector('.paragraph');
-
-const price = (a) => {
-  const iva = a * 0.21;
-  const withoutIva = a - iva;
-  const total = withoutIva + iva;
-
-  result.innerHTML = `El precio sin IVA: ${withoutIva}, IVA: ${iva} y Total: ${total}`;
+const box = (a, b, c, d) => {
+  if (borderBox === true) {
+    html.innerHTML = `El ancho del contenido es: ${width}px y el ancho total de la caja es: ${
+      width + padding + borderSize
+    } px`;
+  } else {
+    html.innerHTML = `El ancho del contenido es: ${width}px y el ancho total de la caja es: ${
+      width + padding
+    } px`;
+  }
 };
-price(25);
 
-//another option
-const newPrice = (a) => {
-  const newIva = a * 0.21;
-  const noIva = a - newIva;
-  const totalPrice = noIva + newIva;
-
-  const resultPrice = `Precio sin IVA: ${noIva}, IVA: ${newIva} y Total: ${totalPrice}`;
-  return resultPrice;
-};
-//newPrice(25);
-
-console.log(newPrice(25));
+box(true, 10, 10, 10);
