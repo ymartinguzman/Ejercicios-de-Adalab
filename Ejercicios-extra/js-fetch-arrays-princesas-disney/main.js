@@ -11,8 +11,8 @@ function apiData(arr) {
     .then((data) => {
       princess = data;
       console.log(princess);
+      paintInfo();
     });
-  paintInfo(princess);
 }
 
 function paintInfo() {
