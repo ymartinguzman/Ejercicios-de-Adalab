@@ -1,6 +1,7 @@
 'use strict';
 
 const list = document.querySelector('.list');
+const btn = document.querySelector('.js-btn');
 
 let princess = [];
 function apiData(arr) {
@@ -22,13 +23,19 @@ function paintInfo() {
     const picture = princess[i].picture;
     const name = princess[i].name;
     const comment = princess[i].comment;
-    result += `<li>`;
-    result += `<img src = ${picture} alt=${name}>`;
-    result += `<h2> ${name} </h2>`;
-    result += `${comment}`;
-    result += `</li>`;
+    result += `<li class="js-list--data"><button class="js-btn">`;
+    result += `<div class="container"><img class="js-list--image" src = ${picture} alt=${name}>`;
+    result += `<h2 class="title"> ${name} </h2></div>`;
+    result += `<div class="comment"> ${comment} </div>`;
+    result += `</button></li>`;
   }
   list.innerHTML = result;
 }
+
+// function friendPrincess(){
+//   if()
+// }
+
+// btn.addEventListener('click', friendPrincess);
 
 apiData(princess);
