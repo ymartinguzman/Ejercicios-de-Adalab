@@ -12,7 +12,6 @@ function apiData(arr) {
     .then((response) => response.json())
     .then((data) => {
       princess = data;
-      console.log(princess);
       paintInfo();
     });
 }

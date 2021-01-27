@@ -4,15 +4,31 @@
   padding: 0;
 }
 
-/* .container {
-  display: flex;
-  flex-direction: column;
+.main-title {
+  text-align: center;
+  color: #00a0ff;
+}
+.list {
+  margin: 20px 400px;
 }
 
-
-/* .title {
-  flex-direction: row;
-} */
+.js-list--data {
+  display: flex;
+  align-items: center;
+  outline: solid 1px #eae8e8;
+  padding: 15px;
+}
+.js-list--image {
+  width: 100px;
+  height: 100px;
+}
+.title {
+  font-size: 16px;
+}
+.comment {
+  padding: 15px 70px;
+  font-size: 20px;
+}
 
 .js-list--background {
   background-color: aqua;
