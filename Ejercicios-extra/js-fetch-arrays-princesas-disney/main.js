@@ -1,6 +1,7 @@
 'use strict';
 
 const list = document.querySelector('.list');
+
 const btn = document.querySelector('.js-btn');
 
 let princess = [];
@@ -23,19 +24,25 @@ function paintInfo() {
     const picture = princess[i].picture;
     const name = princess[i].name;
     const comment = princess[i].comment;
-    result += `<li class="js-list--data"><button class="js-btn">`;
+    result += `<li class="js-list--data ">`;
     result += `<div class="container"><img class="js-list--image" src = ${picture} alt=${name}>`;
     result += `<h2 class="title"> ${name} </h2></div>`;
     result += `<div class="comment"> ${comment} </div>`;
-    result += `</button></li>`;
+    result += `</li>`;
   }
   list.innerHTML = result;
+  listenList();
 }
 
-// function friendPrincess(){
-//   if()
-// }
+function listenList() {
+  const listItems = document.querySelectorAll('.js-list--data');
+  for (const listItem of listItems) {
+    listItem.addEventListener('click', friendPrincess);
+  }
+}
 
-// btn.addEventListener('click', friendPrincess);
+function friendPrincess(event) {
+  event.currentTarget.classList.toggle('js-list--background');
+}
 
 apiData(princess);
